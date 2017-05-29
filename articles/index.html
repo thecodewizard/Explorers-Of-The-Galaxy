@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explorers Of The Articles</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="icon" href="../images/icons/icon_spacecraft.png"/>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/firedraft.css"/>
+    <link rel="stylesheet" href="../css/firedraft_960.css"/>
+    <link rel="stylesheet" href="../css/firedraft_640.css"/>
+    <link rel="stylesheet" href="../css/firedraft_480.css"/>
+    <link rel="stylesheet" href="../css/ashes.css" />
+    <link rel="stylesheet" href="../css/charcoal.css" media="print"/>
+    <script src="../js/lavabooster.js"></script>
+</head>
+<body>
+<div id="placeholder">
+    <header>
+        <!-- This will contain the HEADER elements (nav + title) -->
+        <h1>Explorers Of The Galaxy - Articles</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Articles</a></li>
+                <li><a href="../spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="../galaxy.html">Galaxy</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div id="tilt_message" class="directfade" style="opacity: 0;"><p>Please Turn your device for an optimised layout.</p></div>
+    </header>
+    <main>
+        <!-- The main contains the search filter as aside and each article with two guiding buttons in sections -->
+        <!-- <h2>Explore Articles</h2> -->
+        <aside class="art">
+            <h3>Filter Articles</h3>
+            <div>
+                <h4>Type of Spacecraft</h4>
+                <input type="checkbox" id="sptype_orbitational" name="sptype[]" checked disabled/>
+                <label for="sptype_orbitational">Orbitational</label><br/>
+                <input type="checkbox" id="sptype_interstellar" name="sptype[]" checked disabled/>
+                <label for="sptype_interstellar">Interstellar</label><br/>
+            </div>
+            <div>
+                <h4>Project</h4>
+                <input type="checkbox" id="pr_gop" name="proj[]" checked disabled/>
+                <label for="pr_gop">GOP</label><br/>
+                <input type="checkbox" id="pr_hst" name="proj[]" checked disabled/>
+                <label for="pr_hst">Hubble Deepspace</label><br/>
+                <input type="checkbox" id="pr_other" name="proj[]" checked disabled/>
+                <label for="pr_other">Other</label><br/>
+            </div>
+            <div>
+                <h4>Type</h4>
+                <input type="checkbox" id="type_photo" name="type[]" checked disabled/>
+                <label for="type_photo">Photo</label><br/>
+                <input type="checkbox" id="type_video" name="type[]" checked disabled/>
+                <label for="type_video">Video</label><br/>
+            </div>
+            <div>
+                <h4>Sort On</h4>
+                <input type="radio" id="sort_date" name="sort" disabled/>
+                <label for="sort_date">Date</label><br/>
+                <input type="radio" id="sort_popul" name="sort" checked disabled/>
+                <label for="sort_popul">Popularity</label><br/>
+                <input type="radio" id="sort_sc" name="sort" disabled/>
+                <label for="sort_sc">Spacecraft</label><br/>
+                <input type="radio" id="sort_dist" name="sort" disabled/>
+                <label for="sort_dist">Distance</label><br/>
+                <br/><p id="error" title="I'm really really sorry.">The filter function is temporarily unavailable.</p>
+            </div>
+        </aside>
+        <section>
+            <section id="atop" class="button disabled">
+                <!-- This section contains the link for exploring articles -->
+                <a style="font-size: 15px;"># articles found based on current search filter</a>
+            </section>
+            <section>
+                <article>
+                    <span><img src="../images/articles/article_spitzer_small.png" alt="spitzer telescope on launch"
+                         title="The launch of the Spitzer rocket. (Picture: NASA mediacenter)"/></span>
+                    <div>
+                        <h3>Spitzer Launched</h3>
+
+                        <p>This morning, the craft Spitzer was launched successfully and is now in earths orbit.</p>
+                        <a href="spitzer_launched.html">read more &#9654;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="sptype">Orbitational</span>
+                        <span class="project">GOP</span>
+                        <span class="type">Photo</span>
+                    </div>
+                </article>
+                <article>
+                    <span><img src="../images/articles/article_hubbledeepfield_small.jpg"
+                         alt="the picture taken by the hubble telescope of the interstellar deepfield architecture"
+                         title="The actual photo from the HST. (Picture: Hubble Science Center)"/></span>
+                    <div>
+                        <h3>Hubble Deepfield</h3>
+
+                        <p>A new breakthrough with the HST as the Hubble deepfield reveals it's secrets.</p>
+                        <a href="hubble_deepfield.html">read more &#9654;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="sptype">Orbitational</span>
+                        <span class="project">Hubble</span>
+                        <span class="type">Photo</span>
+                    </div>
+                </article>
+                <article>
+                    <span><img src="../images/articles/article_pioneersjourney_small.jpg"
+                         alt="the planets that pioneer has encountered on his journey"
+                         title="The planets that the Pioneer 10 craft visited. (Picture: NASA mediacenter)"/></span>
+                    <div>
+                        <h3>Pioneers Journey</h3>
+
+                        <p>For its 25th birthday in space, the new documentary of the pioneers journey has been
+                            recorded.</p>
+                        <a href="pioneers_journey.html">read more &#9654;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="sptype">Interstellar</span>
+                        <span class="type">Video</span>
+                    </div>
+                </article>
+                <article hidden="hidden">
+                    <span><img src="../images/articles/article_terminationshock_small.jpg"
+                         alt="drawing of the termination shock of our solar system."
+                         title="The edge of the solar system in animation. (Picture: Wikimedia)"/></span>
+                    <div>
+                        <h3>Termination Shock</h3>
+
+                        <p>In 2015, the voyager 1 will cross the Termination Shock and will officially go into interstellar
+                            space.</p>
+                        <a href="termination_shock.html">read more &#9654;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="project">Hubble</span>
+                        <span class="type">Photo</span>
+                    </div>
+                </article>
+                <article hidden="hidden">
+                    <span><img src="../images/articles/article_planetalignment_small.png"
+                         alt="The planets Venus and Mercurius are in one line as visible in the animation"
+                         title="The alignment of Venus and Mercurius are in one line. (Picture: ESA Animated Media)"/></span>
+                    <div>
+                        <h3>Planet Alignment</h3>
+                        <p>Tomorrow will be the day where Venus and Mercurius will align with Earth, which only happens once
+                            every 153 years.</p>
+                        <a href="planet_alignment.html">read more &#9654;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="type">Photo</span>
+                    </div>
+                </article>
+            </section>
+            <section id="abottom" class="button">
+                <!-- This section contains the link for exploring articles -->
+                <a>Next Articles &#9660;</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- This will contain the FOOTER elements (nav + section) -->
+        <section>
+            <!-- This section contains the search bar -->
+            <label for="txtsearch" hidden="hidden"></label>
+            <input type="text" id="txtsearch" name="txtsearch" value="Search On Google"/>
+            <input type="button" id="btnsearch" name="btnsearch" value="Search"/>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Articles</a></li>
+                <li><a href="../spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="../galaxy.html">Galaxy</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+    <script>
+        //Helperfunctions
+        initMainElements();
+        document.addEventListener('DOMContentLoaded', ns_eotg_articles.initElements());
+        //This will contain the initfunction of the namespace of the current page.
+    </script>
+</body>
+</html>

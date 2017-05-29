@@ -1,0 +1,1069 @@
+/* COLOR TEMPLATES */
+    /* Theme 1 */
+        /* lightblue: #6A80B1,  grey: #a6a6a6, dark: #05243D
+             blue: #1F659D   */
+    /* Theme 2 */
+        /* redish: #63D31, black: #2A1510, brown: #5F3B2D,
+            light brown: #C7A699, blue: #46446 */
+/* This CSS applies for all >1200px and all pages. */
+
+
+/* GENERAL CSS */
+    /* all-round basic settings */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*background:linear-gradient(to right, transparent , #000000 30%, #000000 70%, transparent), url(../images/body_bg_stars.png); */
+    background: url(../images/body_bg_stars_hd.png);
+}
+
+.disable_scroll{
+    height: 100%;
+    overflow: hidden;
+}
+
+.mobile{
+    display: none;
+}
+
+#placeholder{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+}
+
+main{
+    margin: 60px 120px 30px 120px;
+}
+
+article{
+    position:relative;
+}
+
+    /* Clear-fix */
+main:after, aside:after, main section>article:after, article>div:after{
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+    /* fonts */
+@font-face {
+    font-family: EnterpriseT;
+    src: url(../fonts/Skynet.EnterpriseT.otf) format('otf');
+    src: url('../fonts/skynet.enterpriset-webfont.eot'),
+    url('../fonts/skynet.enterpriset-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/skynet.enterpriset-webfont.woff2') format('woff2'),
+    url('../fonts/skynet.enterpriset-webfont.woff') format('woff'),
+    url('../fonts/skynet.enterpriset-webfont.ttf') format('truetype'),
+    url('../fonts/skynet.enterpriset-webfont.svg#skynet.enterpriseregular') format('svg');
+}
+
+@font-face {
+    font-family: Xolonium;
+    src: url(../fonts/Xolonium-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Xolonium;
+    src: url(../fonts/Xolonium-Bold.otf);
+    font-weight: bold;
+}
+
+    /* general elements */
+h1{
+    color: white;
+    width: 100%;
+
+    line-height: 1.5em;
+    text-align: left;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 3em;
+    font-family: EnterpriseT, sans-serif;
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+h2{
+    color: white;
+    width: 100%;
+
+    margin: 0 0 0 100px;
+
+    line-height: 1.5em;
+    text-align: left;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 2.7em;
+    font-family: EnterpriseT, sans-serif;
+    font-weight: normal;
+
+    cursor: default;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+section a>p{
+    cursor: pointer;
+}
+
+input{
+    height: 25px;
+}
+
+p{
+    cursor: text;
+    font-size: 17px;
+}
+
+span, #tilt_message{
+    display: none;
+}
+
+/* ENLARGE IMAGES */
+    /* The message for the user in the spacecraft page. */
+.popup{
+    position: absolute;
+    left: 500px;
+    top: 675px;
+}
+
+.popup p{
+    color: red;
+
+    font-family: "EnterpriseT", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/* ENLARGE IMAGES v0.1 */
+    /* The overlay when the user enlarges images */
+div.enlarge {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+    top: 0;
+    left:0;
+
+    text-align: center;
+    vertical-align: 50%;
+}
+
+div.enlarge p{
+    position: absolute;
+    margin: 170px;
+    color: white;
+    z-index: 110;
+}
+
+div.enlarge div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: #a6a6a6;
+    opacity: 0.8;
+}
+
+div.enlarge img{
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    max-height: 75%;
+    margin: 5% 0 5% 0;
+    opacity: 1;
+    z-index: 100;
+}
+
+/* HEADER */
+    /* general */
+header{
+    background: url(../images/header_bg_earth_left_hd.png) no-repeat;
+    background-size: 100%;
+    height: 120px;
+    width: 100%;
+}
+
+    /*navigation*/
+header nav ul{
+    color: white;
+    list-style-type: none;
+
+    margin: -30px 0 0 60px ;
+}
+
+nav ul li{
+    display:inline-block;
+    padding: 0 10px 0 10px;
+    border-right: 1px white solid;
+}
+
+nav ul li:last-child{
+    border: none;
+}
+
+nav ul li a:hover{
+    color: #1F659D;
+    text-decoration: underline;
+}
+
+/* EXPLORE SPACE SECTION */
+    /* images */
+        /* general css for all the images */
+header+section{
+    width: 100%;
+    height: 670px;
+}
+
+header+section h2{
+    position:absolute;
+    top: 212px;
+    z-index: 10;
+}
+
+header+section a>p:hover{
+    color: #7DB2FF;
+}
+
+    /* general css for all the article elements */
+header+section a, #subscribe_box, .subscr>h2{
+    width: 262px;
+    height: 150px;
+
+    border: 2px #7DB2FF solid;
+    border-left: none;
+    border-right: none;
+
+    position: absolute;
+}
+
+header+section a:hover{
+    border: 5px #1F659D solid;
+    border-left: none;
+    border-right: none;
+}
+
+header+section a>p{
+    color: white;
+
+    height: 160px;
+    padding: 25px 0 20px 0;
+    margin: -5px 0 -5px 0;
+    box-sizing: border-box;
+
+    font-family: EnterpriseT;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    align-content: center;
+}
+
+    /* positioning of the items */
+a.pos1, #subscribe_box{
+    margin: 45px 200px 555px 738px;
+
+    position: absolute;
+    z-index: 10;
+}
+
+a.pos1.small{
+    margin: 80px 200px 520px 782px;
+}
+
+a.pos2{
+    margin: 225px 200px 225px 738px;
+
+    position:absolute;
+    z-index: 10;
+}
+
+a.pos2.small{
+    margin: 260px 200px 240px 782px;
+}
+
+a.pos3{
+    margin: 400px 200px 45px 738px;
+
+    position: absolute;
+    z-index: 10;
+}
+
+a.pos3.small{
+    margin: 420px 200px 80px 782px;
+}
+
+    /* dimentions of the item */
+a.small{
+    width: 174px;
+    height: 100px;
+
+    border: 2px #7DB2FF solid;
+    border-right: none;
+    border-left: none;
+}
+
+a.small:hover{
+    border: 3px #1F659D solid;
+    border-left: none;
+    border-right: none;
+}
+
+a.small>p{
+    height: 110px;
+    font-size: 1.5em;
+}
+
+    /* css for sldImages */
+.sldImageContainer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.sldImageContainer img{
+    width: 100%;
+    height: 600px;
+
+    position: absolute;
+}
+
+    /* adaptations for the subscribe page */
+.subscr .uicontrols p{
+    color:white;
+    opacity: 1;
+    margin-top: 637px;
+}
+
+    /* uicontrols for javascript */
+.uicontrols{
+    border: 2px #7DB2FF solid;
+    border-right: none;
+    border-left: none;
+    opacity: 0.75;
+
+    height: 2em;
+    width: 1200px;
+    position:relative;
+    z-index: 10;
+}
+
+.uicontrols>p{
+    color: white;
+    opacity: 0.75;
+
+    position: absolute;
+    margin-top: 600px;
+    padding-left: 10px;
+}
+
+#uicontrol_bottom{
+    width: 100%;
+    height: 36px;
+    line-height: 18px;
+    box-sizing: content-box;
+
+    margin-top: -3px;
+}
+
+#uicontrol_bottom img{
+    height: 24px;
+    padding: 6px;
+    float: left;
+}
+
+#uicontrol_bottom div>*{
+    cursor: pointer;
+}
+
+    /* UI Icons */
+#pauze:hover{
+    content: url(../images/icons/pauze_button_filled.png);
+}
+
+#play:hover{
+    content: url(../images/icons/play_button_filled.png);
+}
+
+#enlarge:hover{
+    content: url(../images/icons/enlarge_filled.png);
+}
+
+    /* transitions */
+.fade div, .fade img, .fade article ,div.enlarge.fade , section div a, section div p, .fade>h2, .fade>.button, .directfade{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out ;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+a:hover, p:hover{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.flip{
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* ASIDE */
+    /* general aside */
+aside{
+    width: 30%;
+    height: 750px;
+    box-sizing: border-box;
+    float: left;
+
+    margin-right: 5%;
+    padding: 0 10px 30px 10px;
+    border: 2px #7DB2FF solid;
+    border-left: none;
+    border-right: none;
+
+    align-content: center;
+    overflow: hidden;
+}
+
+aside h3, #subscribe_box h3{
+    color: #7DB2FF;
+
+    font-size: 2em;
+    font-weight: normal;
+    font-family: EnterpriseT;
+
+    margin: 25px 0 35px 0;
+    text-align: center;
+}
+
+aside h4{
+    color: #1F659D;
+    font-size: 18px;
+
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+aside div:last-child{
+    margin: 10px 0 0 0;
+}
+
+aside input, #subscribe_box input{
+    margin: 10px 5px 5px 50px;
+    height: 1em;
+}
+
+aside label, #subscribe_box label{
+    width: 100%;
+    color: white;
+    margin: 5px 5px 5px 5px;
+}
+
+    /* Aside Galaxy */
+aside p{
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+aside p.active{
+    color:#7DB2FF;
+    text-decoration: underline;
+}
+
+.active>span{
+    display:inline;
+}
+
+aside.art h4{
+    text-align: left;
+    margin: 20px 0 10px 20px;
+}
+
+    /* Aside Article */
+aside.article div{
+    height: 42%;
+    width: 85%;
+    margin: 20px auto;
+
+    overflow: hidden;
+
+    border: 1px #7DB2FF solid;
+    border-left: none;
+    border-right: none;
+}
+
+aside.article div>div:first-of-type{
+    width: 80%;
+    height: 120px;
+    overflow: hidden;
+
+    align-content: center;
+    margin: 0 auto 15px;
+    border: none;
+}
+
+aside.article a{
+    position: relative;
+    margin-left: 70px;
+    margin-top: -17px;
+    top: -6px;
+}
+
+aside.article a:hover{
+    text-decoration: underline;
+}
+
+aside div img{
+    width: 100%;
+}
+
+/* EXPLORE ARTICLES SECTION */
+    /* home articles */
+main p+p{
+    margin-top: 10px;
+}
+
+main h2{
+    margin:0 0 30px -20px;
+}
+
+main section{
+    width: 65%;
+    height: 800px;
+    float: left;
+}
+
+main section>section{
+    width: 100%;
+    height: 620px;
+}
+
+main section>section:first-child{
+    margin: 0 0 20px 0;
+}
+
+main section>section:last-child{
+    margin: 10px 0 0 0;
+}
+
+main section>article{
+    width: 100%;
+    height: 150px;
+    margin:40px 0;
+}
+
+main section>article span{
+    display: block;
+}
+
+main section>article img{
+    width: 163px;
+    height: 150px;
+    float:left;
+    cursor: help;
+}
+
+article>div{
+    float:left;
+    width: 383px;
+    padding: 0 15px;
+}
+
+article>div>h3{
+    color: #7DB2FF;
+    margin-bottom: 15px;
+    cursor:default;
+}
+
+article>div>p{
+    color: white;
+}
+
+section>article>div>p>a{
+    color: #1F659D;
+    font-size: 1em;
+}
+
+article>div>a, aside.article>div>a{
+    color: #1F659D;
+    float:left;
+
+    margin-top: 15px;
+
+    position: relative;
+    left: 0;
+    bottom: -18px;
+}
+
+article>div>a:hover{
+    text-decoration: underline;
+}
+
+    /* Specification for the article page */
+main>section>section>article>div>a{
+    position: relative;
+    float:left;
+
+    top:0;
+    margin-top: 5px;
+}
+
+    /* Adaptations for the galaxy page */
+section.galaxy{
+    position:relative;
+}
+
+section.galaxy > article{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.galaxy>article>div:first-child, .addimg{
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    position: relative;
+    margin: -15px 0 25px 0;
+
+    border: 1px #a6a6a6 solid;
+    border-right: none;
+    border-left: none;
+}
+
+.galaxy img, .addimg img{
+    width: 100%;
+    height: auto;
+    min-width: 576px;
+
+    position: absolute;
+    left:0;
+    top:0;
+
+    margin: -50px 0 0 0;
+}
+
+.galaxy>article>div+div{
+    width: 100%;
+    height: 500px;
+    display: block;
+    float:none;
+}
+
+    /* type selecting */
+div.tags{
+    position:absolute;
+    top: 133px;
+    left: 163px;
+}
+
+div.tags span{
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+div.tags span:first-child{
+    margin-left: 0;
+}
+
+div.tags span.sptype{
+    color: #C7A699;
+    opacity: 0.5;
+ }
+
+div.tags span.project{
+    color: #5F3B2D;
+    opacity: 0.8;
+}
+
+div.tags span.type{
+    color: #464464;
+    opacity: 0.8;
+}
+
+    /* button */
+.button{
+    width: 100%;
+    height: 50px;
+
+    margin: 50px 0 50px 0;
+}
+
+.button>*{
+    color: white;
+    border: 2px #7DB2FF solid;
+    border-right: none;
+    border-left: none;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+    font-size: 20px;
+
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+
+    display: inline-block;
+}
+
+.slim{
+    margin: 0 0 10px 0;
+    padding: 0 48px 0 0;
+}
+
+.button>*:hover{
+    color: #7DB2FF;
+    border: 2px #1F659D solid;
+    border-right: none;
+    border-left: none;
+}
+
+.button.disabled>a, h2.disabled{
+    border: 2px #a6a6a6 solid;
+    border-right: none;
+    border-left: none;
+    cursor: default;
+}
+
+.button.disabled>*:hover{
+    color: white;
+    border: 2px #a6a6a6 solid;
+    border-right: none;
+    border-left: none;
+    cursor:default;
+}
+
+/* FOOTER */
+    /* container */
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    border: 2px #a6a6a6 solid;
+    border-left: none;
+    border-right: none;
+
+    /* background-color: #a6a6a6; */
+}
+
+    /* search option */
+footer section{
+    float: left;
+    height: 75px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+footer #btnsearch{
+    background-color: #1F659D;
+    color: white;
+
+    margin: 0 0 0 -5px;
+    padding:0;
+    height: 27px;
+    width: 92px;
+
+    border: none;
+}
+
+footer #btnsearch:hover{
+    background-color: white;
+    color:#1F659D;
+    border: 1px #1F659D solid;
+}
+
+footer input{
+    color: #515151;
+    padding-left:10px;
+}
+
+    /* navigation */
+footer nav{
+    float: right;
+    height: 75px;
+    line-height: 50px;
+    margin-right: 50px;
+}
+
+footer>nav ul li{
+    border:none;
+    padding: 0 20px;
+}
+
+/* CHANGES FOR HOMEPAGE */
+    /* General page layout */
+
+.home main section{
+    height: 975px;
+    width: 100%;
+    float:none;
+}
+
+.home .button{
+    height: 50px;
+}
+
+.home main section>article{
+    float:left;
+    width: 50%;
+}
+
+/* When the selector > is used followed by the main, this is only applied on the home page */
+main>section>article:first-child{
+    width: 100%;
+    height: 480px;
+
+    margin:20px 0;
+}
+
+.home article>div{
+    width: 250px;
+}
+
+    /* main article */
+.main_article>div:first-child{
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+
+    border-top: 2px #a6a6a6 solid;
+    border-bottom: 1px #515151 solid;
+    box-sizing: border-box;
+    padding: 0;
+
+    position:relative;
+}
+
+.main_article>div>img{
+    width: 100%;
+    height: 535px;
+    margin-top: -150px;
+}
+
+.main_article>div+div{
+    width: 100%;
+    height: 150px;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 2px #a6a6a6 solid;
+
+    position: relative;
+    display: inline-block;
+    float:none;
+    top: 10px;
+    left: 0;
+}
+
+.main_article>div+div>a{
+    position: relative;
+    margin-top: -10px;
+}
+
+/* ADAPTATIONS FOR THE SUBSCRIBE PAGE */
+    /* Subscribe Block */
+#subscribe_box{
+    height: 425px;
+    width: 300px;
+}
+
+#subscribe_box h3{
+    font-size: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#subscribe_box h4 {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "EnterpriseT", sans-serif;
+
+    margin: 20px 0 0 20px;
+}
+
+.subscr h2, .subscr>section.button{
+    width: 300px;
+    margin-top: 22px;
+    margin-left: 738px;
+    position: absolute;
+    z-index: 11;
+}
+
+.subscr>section.button{
+    margin-top: 250px;
+}
+
+/* ADDITIONS FOR THE SPACECRAFT PAGES */
+    /* Index */
+#area_orbit{
+    position:absolute;
+    left: 10px;
+    top: 270px;
+    height: 350px;
+    width: 500px;
+    z-index: 13;
+
+    border:1px #7DB2FF solid;
+}
+
+#area_inter{
+    position: absolute;
+    left: 650px;
+    top: 160px;
+    height: 350px;
+    width: 550px;
+    z-index: 13;
+
+    border:1px #7DB2FF solid;
+}
+
+#error{
+    color: red;
+    cursor: not-allowed;
+}
+
+/* ADAPTATIONS FOR THE PROJECTS PAGE */
+    /* Launch */
+.launches h2{
+    color: #7DB2FF;
+    font-size: 3.2em;
+    margin:  -20px 0 0 650px;
+}
+
+.launches>div>p{
+    margin-top: 640px;
+}
+
+.launches section{
+    position: absolute;
+    margin: 165px 0 0 50%;
+    width: 45%;
+    z-index: 12;
+    color: white;
+}
+
+.launches section>span{
+    display: block;
+    margin: -20px 0 -20px 260px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.launches article{
+    width: 87%;
+    height: 50px;
+
+    border: 2px #7DB2FF solid;
+    border-left: none;
+    border-right: none;
+    margin: 30px 10% 30px 10%;
+}
+
+.launches article>p{
+    float:left;
+    display: inline-block;
+    width: 25%;
+}
+
+.launches article>p>span{
+    font-size: 2.5em;
+    display: inline-block;
+}
+
+.launches article>div{
+    float:left;
+    width: 78%;
+    margin-left: -20px;
+    line-height: 25px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.launches article>div:after{
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.launches article>div>p{
+    width: 50%;
+    float:left;
+    font-size: 1em;
+}
+
+.launches em{
+    color: #a6a6a6;
+    font-style: normal;
+    padding: 0 0 0 5px;
+}
+
+    /* Projects */
+.projects h2{
+    font-size: 2.6em;
+    margin: -30px 0 30px -20px;
+}
+
+.projects .addimg{
+    height: 200px;
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+
+.addimg img{
+    height: 300px;
+    left: -125px;
+    top: 25px;
+}
+
+.addimg strong{
+    color: #7DB2FF;
+    font-family: "EnterpriseT", sans-serif;
+    font-size: 20px;
+}
+
+.addimg p{
+    margin-top: 25px;
+}
+
+.addimg img:hover{
+    opacity:0.2;
+}

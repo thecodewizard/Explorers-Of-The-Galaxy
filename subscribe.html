@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explorers Of The Galaxy</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="icon" href="images/icons/icon_spacecraft.png"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/firedraft.css"/>
+    <link rel="stylesheet" href="css/firedraft_960.css"/>
+    <link rel="stylesheet" href="css/firedraft_640.css"/>
+    <link rel="stylesheet" href="css/firedraft_480.css"/>
+    <link rel="stylesheet" href="css/ashes.css"/>
+    <link rel="stylesheet" href="css/charcoal.css" media="print"/>
+    <script src="js/lavabooster.js"></script>
+</head>
+<body>
+<div id="placeholder">
+    <header>
+        <!-- This will contain the HEADER elements (nav + title) -->
+        <h1>Explorers Of The Galaxy - Subscribe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles/index.html">Articles</a></li>
+                <li><a href="spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="galaxy.html">Galaxy</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div id="tilt_message" class="directfade" style="opacity: 0;"><p>Please Turn your device for an optimised layout.</p></div>
+    </header>
+    <section class="subscr fade">
+        <!-- <h2>Subscribe</h2> -->
+        <!-- The upper UIcontrol -->
+        <div id="uicontrol_top" class="uicontrols">
+            <p>&#9650; Picture: The Satelite Dish of the Voyager 2 in interstellar space. (Source: NASA EYES Program)</p>
+        </div>
+        <!-- The content of the Slideshow -->
+        <h2 style="opacity: 0; z-index: -3;">Thank you for subscribing</h2>
+        <section id="btn_home" class="button" style="opacity: 0; z-index: -3;">
+            <!-- This section contains the link for exploring articles -->
+            <a href="index.html">&#9664; Return to Home</a>
+        </section>
+        <section id="subscribe_box" class="directfade" style="opacity: 1; z-index: 12;">
+            <section>
+                <h3>Subscribe</h3>
+                <div>
+                    <h4>Name:</h4>
+                    <label for="txt_name" hidden="hidden"></label>
+                    <input type="text" id="txt_name" name="txt_name" />
+                </div>
+                <div>
+                    <h4>Email:</h4>
+                    <label for="txt_mail" hidden="hidden"></label>
+                    <input type="text" id="txt_mail" name="txt_mail" />
+                </div>
+                <div>
+                    <h4>Opt in for:</h4>
+                    <input type="checkbox" id="opt1" name="options[]" onchange="ns_eotg_subscribe.validateSubscription(); "/>
+                    <label for="opt1">Interstellar Discoveries</label><br/>
+                    <input type="checkbox" id="opt2" name="options[]" onchange="ns_eotg_subscribe.validateSubscription(); "/>
+                    <label for="opt2">New Scientific Insights</label><br/>
+                    <input type="checkbox" id="opt3" name="options[]" onchange="ns_eotg_subscribe.validateSubscription(); "/>
+                    <label for="opt3">New Articles Available</label><br/>
+                    <input type="checkbox" id="opt4" name="options[]" onchange="ns_eotg_subscribe.validateSubscription(); "/>
+                    <label for="opt4">Approaching Launches</label><br/>
+                </div>
+            </section>
+            <section id="subscribe" class="button">
+                <!-- This section contains the link for exploring articles -->
+                <a>Subscribe</a>
+            </section>
+        </section>
+        <div class="sldImageContainer">
+            <img src="images/bg_subscribe_1.png" alt="Front face of the voyager 1 Satelite. Subscribe background." title="" />
+        </div>
+    </section>
+    <footer>
+        <!-- This will contain the FOOTER elements (nav + section) -->
+        <section>
+            <!-- This section contains the search bar -->
+            <label for="txtsearch" hidden="hidden"></label>
+            <input type="text" id="txtsearch" name="txtsearch" value="Search On Google"/>
+            <input type="button" id="btnsearch" name="btnsearch" value="Search"/>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles/index.html">Articles</a></li>
+                <li><a href="spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="galaxy.html">Galaxy</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+<script>
+    //Helperfunctions
+    initMainElements();
+    var body = document.getElementsByTagName('body')[0];
+    body.addEventListener('DOMContentLoaded', ns_eotg_subscribe.initElements());
+    //This will contain the initfunction of the namespace of the current page.
+</script>
+</body>
+</html>

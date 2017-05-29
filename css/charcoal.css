@@ -1,0 +1,251 @@
+/* This CSS applies for print*/
+
+@media print{
+    /* GENERAL CSS */
+    body{
+        background: none;
+
+    }
+
+    #placeholder{
+        width: 90%;
+        background-color: transparent;
+    }
+
+    h1, h2{
+        color: #a6a6a6;
+    }
+
+    a{
+        color: #a6a6a6;
+    }
+
+    .popup{
+        display: none;
+    }
+
+    .enlarge{
+        display: none;
+        pointer-events: none;
+    }
+
+    /* HEADER */
+
+    header{
+        background: none;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    /* EXPLORE IMAGES SECTION */
+    header+section{
+        height: 310px;
+    }
+
+    header+section h2, main h2{
+        position:relative;
+        top: 0;
+        border-top: 2px #7DB2FF solid;
+        padding-top: 20px;
+        margin: 0;
+    }
+
+    header+section a>p{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        line-height: 25px;
+
+        font-size: 1.5em;
+
+        border: 1px #7DB2FF solid;
+        border-left: none;
+        border-right: none;
+
+        padding: 10px 10px;
+    }
+
+    header+section a>p br{
+        display: none;
+    }
+
+        /* positioning of the items */
+    a.pos1, #subscribe_box, a.pos2, a.pos3{
+        position: relative;
+        margin: 10px 0;
+    }
+
+    a.pos1.small, a.pos2.small, a.pos3.small{
+        margin: 10px 0;
+    }
+
+        /* dimentions of the item */
+    a.small{
+        width: 100%;
+        height: 50px;
+    }
+
+    a.small>p{
+        height: 50px;
+        line-height: 25px;
+        font-size: 1.5em;
+    }
+
+        /* css for sldImages */
+    .sldImageContainer{
+        display:none;
+    }
+
+        /* uicontrols for javascript */
+    .uicontrols{
+        display:none;
+    }
+
+    /* EXPLORE ARTICLES SECTION */
+    main{
+        height: 625px;
+        margin: 20px 0 0 0;
+    }
+
+    main img{
+        display: none;
+    }
+
+    main section{
+        height: 700px;
+    }
+
+    main>section>article:first-child{
+        height: 200px;
+    }
+
+    .main_article>div:first-child{
+        display:none;
+    }
+
+    main>section article{
+        margin: 0;
+    }
+
+    article a{
+        display: none;
+    }
+
+    .home .button{
+        display: none;
+    }
+
+    /* FOOTER */
+    footer{
+        display: none;
+    }
+
+    /* PAGE ADAPTATIONS */
+        /* Article index */
+    .art>div>input{
+        margin: 1px 10px 5px 20px;
+    }
+
+    .art+section{
+        width: 65%;
+    }
+
+    .art+section>section.button>a{
+        font-size: 13px; !important;
+    }
+
+    #error{
+        display: none;
+    }
+
+    .tags{
+        display: none;
+    }
+
+        /* individual articles */
+    .article{
+        display: none;
+    }
+
+    .article+section{
+        width: 100%;
+    }
+
+    .article+section img{
+        display: block;
+    }
+
+    .article+section #abottom{
+        display:none;
+    }
+
+        /* spacecraft page */
+    .mobile{
+        display: block;
+    }
+
+        /* galaxy page */
+    #galaxy_main>aside{
+        display: none;
+    }
+
+    #galaxy_main>section{
+        width: 100%;
+    }
+
+    #galaxy_main>section .button{
+        display: none;
+    }
+
+    #galaxy_main img{
+        display: block;
+    }
+
+        /* Subscribe page */
+    #subscribe_box{
+        position: relative;
+        width: 100%;
+        padding: 20px 40%;
+        margin: 0 auto;
+    }
+
+        /* Projects page */
+    .launches .uicontrols, .launches .sldImageContainer{
+        display: block;
+    }
+
+    .launches{
+        height: 800px;
+    }
+
+    .launches h2{
+        margin: 20px;
+    }
+
+    .launches .sldImageContainer img{
+        display: none;
+    }
+
+    .launches article{
+        width: 80%;
+        margin: 20px 100px;
+    }
+
+    .launches .uicontrols+section{
+        width: 100%;
+        margin: 25px;
+    }
+
+    .launches section>article>p{
+        float: left;
+        width: 20%;
+    }
+
+    .launches section>article>div{
+        float: left;
+        width: 80%;
+    }
+}
+

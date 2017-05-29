@@ -1,0 +1,185 @@
+/* This CSS applies for every device between 480px and 640px. */
+    /* Target Device: Nexus 7 - Portrait (604), Samsung Tablet - Portrait (600)*/
+
+@media screen and (min-width: 480px) and (max-width: 639px){
+
+    /* GENERAL CSS */
+        /* all-round basic settings */
+    #placeholder{
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* HEADER */
+    h1{ font-size: 2em; text-align: center; }
+    header{ text-align: center; width: 100%; padding:0; }
+    header nav{ margin-left: -15px; }
+    header nav ul li { padding: 0 4px 0 2px; }
+
+    /* ADAPTATIONS TO THE 640PX FILE FOR SMALLER SCREENS */
+    /* EXPLORE ARTICLES SECTION */
+    /* home articles */
+    main>section{
+        height: 950px;
+    }
+
+    .home main section{
+        height: 1400px;
+    }
+
+    main section, .home main section>article, .home article>div{
+        width: 100%;
+        float: none;
+    }
+
+    .home>main>section>article{
+        height: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    main section>article>div, .main_article>div+div{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border: none;
+    }
+
+    main section>article span, .main_article>div:first-child{
+        width:100%;
+        height: 100px;
+        overflow: hidden;
+
+        margin: 10px 0;
+        border-top: 1px #a6a6a6 solid;
+        border-bottom: none;
+    }
+
+    main section>article img, .main_article>div>img{
+        width: 100%;
+        height: auto;
+    }
+
+    main section>article img:first-child{
+        margin-top: -60px;
+    }
+
+    main section>article:nth-child(4) img{
+        margin-top: -100px;
+    }
+
+    article>div>p{
+        width: 100%;
+    }
+
+    article>div>a, .main_article>div+div>a, main>section>section>article>div>a{
+        position: relative;
+        box-sizing: content-box;
+        float: none;
+        margin: 0;
+        padding: 0;
+        top:10px;
+        left:0;
+    }
+
+    main>section>article.main_article{
+        width: 100%;
+        height: 350px;
+    }
+
+    .main_article>div+div>p+p, #selectionfield, .popup{
+        display: none;
+    }
+
+    /* ARTICLE ADAPTIONS *+
+        /* Adaptions for the galaxy page & the 'article' part of each page */
+    main section section{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 510px;
+    }
+
+    aside.art+section{
+        height: 800px;
+        margin-top: 40px;
+    }
+
+    .art+section>section{
+        height: 660px;
+        border: none;
+    }
+
+    .art+section>section.button{
+        height: 50px;
+    }
+
+    .galaxy{
+        height: 800px;
+    }
+
+    .galaxy article>div:first-child{
+        margin: 0 0 25px 0;
+    }
+
+    .galaxy article{
+        height: 775px;
+    }
+
+    .galaxy article>div+div{
+        height: auto;
+        max-height: 600px;
+        text-align: left;
+        padding: 0 5%;
+    }
+
+    /* type selecting */
+    div.tags{
+        display: none;
+    }
+
+    /* Spacecraft page */
+    .mobile{
+        display: block;
+    }
+
+    .mobile a.pos1>p{
+        text-align: right;
+        background: url(../images/home_slideshow_1_voyager.png) no-repeat;
+        background-size: contain;
+    }
+
+    .mobile a.pos2>p{
+        text-align: right;
+        background: url(../images/home_slideshow_2_jupiter.png) no-repeat;
+        background-size: contain;
+    }
+
+    .mobile>div a.pos1{
+        background: url(../images/spacecrafts/key_ISS_spacecrafts.png) top left no-repeat, url(../images/spacecrafts/bg_no_spacecrafts.png) no-repeat;
+        background-size: contain;
+    }
+
+    .mobile>div a.pos2{
+        background: url(../images/spacecrafts/key_voyager_spacecrafts.png) top left no-repeat, url(../images/spacecrafts/bg_no_spacecrafts.png) no-repeat;
+        background-size: contain;
+    }
+
+    .mobile a.pos1, .mobile a.pos2, .mobile a.pos3{
+        position: relative;
+        margin: 10px 0;
+    }
+
+    .popup+footer{
+        margin-top: -200px;
+    }
+
+    /* FOOTER */
+    #btn_home{
+        margin: 250px 0 40px 50%;
+    }
+
+    footer nav ul li{
+        padding: 0 5px;
+    }
+}

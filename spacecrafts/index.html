@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explorers Of The Spacecrafts</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="icon" href="../images/icons/icon_spacecraft.png"/>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/firedraft.css"/>
+    <link rel="stylesheet" href="../css/firedraft_960.css"/>
+    <link rel="stylesheet" href="../css/firedraft_640.css"/>
+    <link rel="stylesheet" href="../css/firedraft_480.css"/>
+    <link rel="stylesheet" href="../css/ashes.css"/>
+    <link rel="stylesheet" href="../css/charcoal.css" media="print"/>
+    <script src="../js/lavabooster.js"></script>
+</head>
+<body>
+<div id="placeholder">
+    <header>
+        <!-- This will contain the HEADER elements (nav + title) -->
+        <h1>Explorers Of The Galaxy - Spacecrafts</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../articles/index.html">Articles</a></li>
+                <li><a href="index.html">Spacecrafts</a></li>
+                <li><a href="../galaxy.html">Galaxy</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div id="tilt_message" class="directfade" style="opacity: 0;"><p>Please Turn your device for an optimised layout.</p></div>
+    </header>
+    <section>
+        <!-- This section contains the images that will move using javascript -->
+        <h2>Select Type of Spacecraft</h2>
+        <!-- The upper UIcontrol -->
+        <div id="uicontrol_top" class="uicontrols">
+            <p>Horizon Earth with the sun in background. (Source: NASA EYES Program)</p>
+        </div>
+        <!-- The content of the Slideshow -->
+        <section id="selectionfield">
+            <a id="area_orbit" style="opacity: 0;" class="directfade" href="orbitational_crafts.html"></a>
+            <a id="area_inter" style="opacity: 0;" class="directfade" href="interstellar_probes.html"></a>
+            <div class="sldImageContainer fade">
+                <img id="spc_orbitational" src="../images/spacecrafts/bg_no_spacecrafts.png" alt="The ISS coming behind the earth's horizon - Choose for Orbitational Crafts."/>
+                <img id="spc_interstellar" src="../images/spacecrafts/key_voyager_spacecrafts.png" alt="The voyager 1 flying in space - Choose for Interstellar Crafts."/>
+                <img id="spc_bg" src="../images/spacecrafts/key_ISS_spacecrafts.png" alt="The horizon of the earth, with the sun in the background. - Background for spacecrafts."/>
+            </div>
+        </section>
+        <section class="mobile">
+            <div>
+                <a href="orbitational_crafts.html" class="pos1"><p>Orbitational Crafts</p></a>
+                <a href="interstellar_probes.html" class="pos2"><p>Interstellar Probes</p></a>
+            </div>
+        </section>
+    </section>
+    <section class="popup directfade" style="opacity: 0">
+        <p>Please select one of the spacecrafts to continue.</p>
+    </section>
+    <footer>
+        <!-- This will contain the FOOTER elements (nav + section) -->
+        <section>
+            <!-- This section contains the search bar -->
+            <label for="txtsearch" hidden="hidden"></label>
+            <input type="text" id="txtsearch" name="txtsearch" value="Search On Google"/>
+            <input type="button" id="btnsearch" name="btnsearch" value="Search"/>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../articles/index.html">Articles</a></li>
+                <li><a href="index.html">Spacecrafts</a></li>
+                <li><a href="../galaxy.html">Galaxy</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+<script>
+    //Helperfunctions
+    initMainElements();
+    document.addEventListener('load', ns_eotg_spacecrafts.initElements());
+    //This will contain the initfunction of the namespace of the current page.
+</script>
+</body>
+</html>

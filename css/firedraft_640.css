@@ -1,0 +1,278 @@
+/* This CSS applies for every device between 640px and 960px. */
+    /* Target Device: Nexus 5 - Landscape (640), IPhone 6 - Landscape (667), Nokia C - Landscape (640) */
+
+@media screen and (min-width: 480px) and (max-width: 960px){
+
+    /* GENERAL CSS */
+        /* all-round basic settings */
+
+    body{
+        background: url(../images/body_bg_stars_lq.png);
+    }
+
+    #placeholder{
+        width: 100%;
+        min-width: 640px;
+        max-width: 840px;
+    }
+
+    h1{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    h2{
+        width: 100%;
+    }
+
+    /* HEADER */
+    header{
+        background: url('../images/header_bg_earth_left_nd.png') center bottom no-repeat;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    header nav ul{
+        width: 100%;
+        margin: -20px 0 0 0;
+    }
+
+    header nav ul li:first-child{
+        padding: 0 10px 0 0;
+    }
+
+    /* EXPLORE SPACE SECTION */
+    header+section{
+        height: 500px;
+        width: 100%;
+    }
+
+    header+section h2{
+        display: none;
+    }
+
+    header+section a{
+        height:100px;
+    }
+
+    header+section a>p{
+        height: 100px;
+        font-size: 2em;
+        padding: 13px 0 20px 0;
+    }
+
+        /* positioning of the items */
+    a.pos1, #subscribe_box{
+        margin: 25px 150px 375px 50%;
+    }
+
+    a.pos2{
+        margin: 150px 150px 150px 50%;
+    }
+
+    a.pos3{
+        margin: 275px 150px 25px 50%;
+    }
+
+    a.pos1.small{
+        margin: 25px 150px 375px 50%;
+    }
+
+    a.pos2.small{
+        margin: 150px 150px 150px 50%;
+    }
+
+    a.pos3.small{
+        margin: 275px 150px 25px 50%;
+    }
+
+    a.small{
+        width: 174px;
+        height: 100px;
+    }
+
+    a.small p{
+        padding: 20px 0;
+    }
+
+        /* css for sldImages */
+    .sldImageContainer{
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .sldImageContainer img{
+        height: 400px;
+    }
+
+    .uicontrols{
+        width: 100%;
+    }
+
+    .uicontrols p{
+        display: none;
+    }
+
+    /* EXPLORE ARTICLES SECTION */
+        /* Home Articles */
+    main h2{
+        margin: 0 0 0 25px;
+    }
+
+    .main_article>div+div{
+        height: 210px;
+    }
+
+    main{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .home>main>section{
+        height: 1250px;
+    }
+
+    main>section{
+        width: 100%;
+        height: 700px;
+    }
+
+    .home>main>section>article{
+        float: none;
+        margin: 30px;
+        width: 100%;
+    }
+
+    .home>main>section>article:first-child{
+        padding: 0;
+    }
+
+    /* ASIDE */
+    aside{
+        display: none;
+    }
+
+    /* FOOTER */
+    footer{
+        height: 70px;
+        padding: 10px 0;
+    }
+
+    footer section{
+        display: none;
+    }
+
+    footer nav{
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        align-content: center;
+        text-align: center;
+    }
+
+    footer nav ul{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* PAGE ADAPTATIONS */
+        /* Article Page */
+    aside.art+section, aside.article+section{
+        width: 100%;
+        height: 700px;
+    }
+
+        /* Spacecraft page */
+    #area_orbit{
+        left: 10px;
+        top: 200px;
+        height: 300px;
+        width: 300px;
+    }
+
+    #area_inter{
+        left: 350px;
+        top: 160px;
+        height: 250px;
+        width: 350px;
+    }
+
+    .popup{
+        top: 500px;
+        left: 170px;
+    }
+
+        /* Projects */
+     .launches .sldImageContainer, .launches .uicontrols{
+        display: none;
+    }
+
+    .launches{
+        height: 700px;
+    }
+
+    .launches section{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 800px;
+    }
+
+    .launches section>span{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .launches article{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 20px 0;
+    }
+
+    .launches article>p{
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .launches em{
+        font-size: 0.9em;
+    }
+
+    .launches article>div{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0;
+    }
+
+    /* ADAPTATIONS FOR PHONES THAT ARE JUST JUST TO SMALL */
+    @media screen and (min-width: 482px) and (max-width: 640px) and (orientation: landscape){
+        #tilt_message{
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #7DB2FF;
+            z-index: 1000;
+        }
+
+        #tilt_message p{
+            font-family: "EnterpriseT", sans-serif;
+            font-size: 23px;
+            padding: 5px;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explorers Of The Galaxy</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="icon" href="images/icons/icon_spacecraft.png"/>
+
+    <!-- General css -->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/firedraft.css"/>
+    <link rel="stylesheet" href="css/charcoal.css" media="print"/>
+
+    <!-- Other vieuwports -->
+    <link rel="stylesheet" href="css/firedraft_960.css"/>
+    <link rel="stylesheet" href="css/firedraft_640.css"/>
+    <link rel="stylesheet" href="css/firedraft_480.css"/>
+    <link rel="stylesheet" href="css/ashes.css"/>
+
+    <!-- Javascript -->
+    <script src="js/lavabooster.js"></script>
+</head>
+<body>
+<div id="placeholder" class="home">
+    <header>
+        <!-- This will contain the HEADER elements (nav + title) -->
+        <h1>Explorers Of The Galaxy - Home</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles/index.html">Articles</a></li>
+                <li><a href="spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="galaxy.html">Galaxy</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div id="tilt_message" class="directfade" style="opacity: 0;"><p>Please Turn your device for an optimised layout.</p></div>
+    </header>
+    <section>
+        <!-- This section contains the images that will move using javascript -->
+        <h2>Explore Space</h2>
+        <!-- The upper UIcontrol -->
+        <div id="uicontrol_top" class="uicontrols">
+            <p style="opacity: 1;">The Voyager 2 in interstellar space. (Picture: NASA medialibrary)</p>
+            <p style="opacity: 0;" >Voyager Fly-by at Jupiter. (Picture: NASA EYES program)</p>
+            <p style="opacity: 0;" >Earth's horizon as seen from space (Picture: ESA photo library)</p>
+        </div>
+        <!-- The content of the Slideshow -->
+        <section id="slideshow">
+            <div>
+                <a href="spacecrafts/index.html" class="pos1"><p>Explore Spacecrafts</p></a>
+                <a href="galaxy.html" class="pos2 small"><p>Explore<br/> Galaxy</p></a>
+                <a href="projects.html" class="pos3 small"><p>Explore Launches</p></a>
+            </div>
+            <div class="sldImageContainer fade">
+                <img style="opacity: 1;" src="images/home_slideshow_1_voyager.png" alt="The Voyager 2 in interstellar space - Explore Spacecrafts"/>
+                <img style="opacity: 0;" src="images/home_slideshow_2_jupiter.png" alt="The Voyager 1 passing Jupiter close-by - Explore Galaxy"/>
+                <img style="opacity: 0;" src="images/home_slideshow_3_earth.png" alt="Earth's horizon as seen from space, mid-day - Explore Launches"/>
+            </div>
+        </section>
+        <!-- The bottom of the Slideshow -->
+        <div id="uicontrol_bottom" class="uicontrols">
+            <img src="images/icons/pauze_button.png" id="pauze"/>
+            <div></div>
+            <img src="images/icons/enlarge.png" id="enlarge"/>
+        </div>
+    </section>
+    <main>
+        <!-- The main contains the 'Recent Articles'. With one big article and four smaller articles. -->
+        <h2>Recent Articles</h2>
+        <section>
+            <!-- This section will contain the articles -->
+            <article class="main_article">
+                <div>
+                    <img src="images/articles/article_planetalignment_large.png"/>
+                </div>
+                <div>
+                    <h3>Planet Alignment</h3>
+
+                    <p>Tomorrow will be a great day for scientists. It's the day where Venus and Mercurius will align with
+                        Earth, which only happens once every 153 years.
+                        Scientists wonder what Mars' influence will be on the solar radiation during the alignment.</p>
+
+                    <p>Be sure to pack your Neutral Density glasses in order to avoid eye damage. The alignment will be
+                        visible for earth around 3pm. </p>
+                    <a href="articles/planet_alignment.html">read more &#9654;</a>
+                </div>
+            </article>
+            <article>
+                <span>
+                <img src="images/articles/article_spitzer_small.png" alt="spitzer telescope on launch"
+                     title="The launch of the Spitzer rocket. (Picture: NASA mediacenter)"/>
+                </span>
+
+                <div>
+                    <h3>Spitzer Launched</h3>
+
+                    <p>This morning, the craft Spitzer was launched successfully and is now in earths orbit.</p>
+                    <a href="articles/spitzer_launched.html">read more &#9654;</a>
+                </div>
+            </article>
+            <article>
+                <span>
+                <img src="images/articles/article_hubbledeepfield_small.jpg"
+                     alt="the picture taken by the hubble telescope of the interstellar deepfield architecture"
+                     title="The actual photo from the HST. (Picture: Hubble Science Center)"/></span>
+
+                <div>
+                    <h3>Hubble Deepfield</h3>
+
+                    <p>A new breakthrough with the HST as the Hubble deepfield reveals it's secrets.</p>
+                    <a href="articles/hubble_deepfield.html">read more &#9654;</a>
+                </div>
+            </article>
+            <article>
+                <span>
+                <img src="images/articles/article_pioneersjourney_small.jpg"
+                     alt="the planets that pioneer has encountered on his journey"
+                     title="The planets that the Pioneer 10 craft visited. (Picture: NASA mediacenter)"/></span>
+
+                <div>
+                    <h3>Pioneers Journey</h3>
+
+                    <p>For its 25th birthday in space, the new documentary of the pioneers journey has been
+                        recorded.</p>
+                    <a href="articles/pioneers_journey.html">read more &#9654;</a>
+                </div>
+            </article>
+            <article>
+                <span>
+                <img src="images/articles/article_terminationshock_small.jpg"
+                     alt="drawing of the termination shock of our solar system."
+                     title="The edge of the solar system in animation. (Picture: Wikimedia)"/></span>
+
+                <div>
+                    <h3>Termination Shock</h3>
+
+                    <p>In 2015, the voyager 1 will cross the Termination Shock and will officially go into interstellar
+                        space.</p>
+                    <a href="articles/termination_shock.html">read more &#9654;</a>
+                </div>
+            </article>
+        </section>
+        <section class="button">
+            <!-- This section contains the link for exploring articles -->
+            <a href="articles/index.html">Explore Articles</a>
+        </section>
+    </main>
+    <footer>
+        <!-- This will contain the FOOTER elements (nav + section) -->
+        <section>
+            <!-- This section contains the search bar -->
+            <label for="txtsearch" hidden="hidden"></label>
+            <input type="text" id="txtsearch" name="txtsearch" value="Search On Google"/>
+            <input type="button" id="btnsearch" name="btnsearch" value="Search"/>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles/index.html">Articles</a></li>
+                <li><a href="spacecrafts/index.html">Spacecrafts</a></li>
+                <li><a href="galaxy.html">Galaxy</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+    <!-- All the requested javascript functions for this page -->
+    <script>
+        //Slideshow
+        ns_eotg_home.homeSlider_toggle();
+
+        //Helperfunctions
+        initMainElements();
+        document.addEventListener('DOMContentLoaded', function(){ ns_eotg_home.initElements();});
+    </script>
+</body>
+</html>
